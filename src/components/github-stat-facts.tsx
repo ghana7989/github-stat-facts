@@ -69,7 +69,7 @@ const GitHubStatTistics: React.FC = () => {
 	): Promise<string> => {
 		try {
 			const response = await axios.get(
-				`https://numbersapi.com/${number}/${type}?json`
+				`http://numbersapi.com/${number}/${type}?json`
 			)
 			return response.data.text
 		} catch (error) {
